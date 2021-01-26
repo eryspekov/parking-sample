@@ -1,0 +1,18 @@
+server:
+  port: 7777
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/parking
+    password: postgres
+    username: postgres
+
